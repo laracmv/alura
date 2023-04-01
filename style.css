@@ -1,0 +1,70 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Oswald&display=swap');
+/* Serve para importar fontes do Google Sites. Par fazê-lo, pesquise a fonte nele, selecione-a, bote no (.) Import, copie o que tem lá(menos script) e cole aqui. Para adicionar a fonte, logo abaixo há o que deve ser copiado e colado.  */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    /* ele permanece com a alturacom 100% da tela(vh) */
+    box-sizing: border-box;
+    /* serve para manter o conteudo dentro da tela, não passando do elemente pai. vide:box sizing mozilla cascading style sheets. Obs: content-box funciona caso nao tenha bordas, se tiver o conteudo sairá da tela */
+    background-color: black;
+    color: aliceblue;
+}
+.apresentacao__conteudo__titulo{
+    font-size: 36px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.apresentacao__conteudo__paragrafo{
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+.destaque{
+    color: #22D4FD;
+}
+
+.apresentacao{
+    display: flex;
+    /* por padrão fica em row(linha), caso queira mudar: flex diretion; vide: a complete guide to flexbox*/
+    align-items: center;
+    /* centraliza em relação a si mesmo */
+   justify-content: space-between;
+    /* deixa um item de um lado e o outro do lado oposto */
+   margin: 10% 15%;
+   /* 10% da pagina fica para dentro */
+}
+
+.apresentacao__conteudo{
+    width: 615px;
+   display: flex;
+   flex-direction: column;
+   /* visto que o fles vem em row  */
+   gap: 40px;
+   /* cria um espaçamento entre os elementos filho */
+}
+
+.apresentacao__links{
+    display: flex;
+    justify-content: space-between;
+}
+
+.apresentacao__links_link{
+    background-color: #22D4FD;
+    text-decoration: none;
+    /* text-decoration tira o _ de um arquivo com link */
+    width: 280px;
+    text-align: center;
+    border-radius: 16px;
+    /* border-radius arredonda as bordas do botão */
+    font-size: 24px;
+    padding: 21.5px 0;
+    /* ao inserir 2 valores no padding, o 1 é o eixo vertical e o segundo do horizonal */
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
