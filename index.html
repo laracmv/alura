@@ -8,26 +8,44 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header></header>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link">Home</a>
+            <a class="cabecalho__menu__link">Sobre Mim</a>
+        </nav>
+    </header>
     <main class="apresentacao">
         <section class="apresentacao__conteudo">
         <!--padrão: nomeDoArquivo-Pai__nomeDoFilho  -->
             <h1 class="apresentacao__conteudo__titulo">
-                Eleve seu negócio digital a outro nível <strong class="destaque"> um Front-end de qualidade!</strong>
+                Criando estilos para a web: <strong class="destaque"> Aprendendo HTML e CSS</strong>
             </h1>
             <p class="apresentacao__conteudo__paragrafo">
-                Olá! Sou Joana Santos, desenvolvedora Front-end com especialidade em React, HTML e CSS. Ajudo pequenos negócios e designers a colocarem em prática boas ideias. Vamos conversar?
+                Olá! Sou Lara Vasconcelos, estudante de Eng. da Computação e em busca de aprender a progamar. Atualmente estou estudando HTML, CSS e JavaScript e pretendo aprender mais de Front-end.
             </p>
             <!-- Div: geralmente usada quand o tem-se uma tag não muito específica -->
+            
             <div class="apresentacao__links">
-                <a class="apresentacao__links_link" href="https://instagram.com/lara_cmv">Instagram</a>
-                <a class="apresentacao__links_link" href="https://github.com/laracmv">Github</a>
+                <h2 class="apresentacao__links__titulo">
+                    Acesse minhas redes:
+                </h2>
+                <a class="apresentacao__links_link" href="https://instagram.com/lara_cmv"> 
+                    <img src="./assets/instagram.png" alt="Logo Instagram">
+                    Instagram
+                </a>
+                <a class="apresentacao__links_link" href="https://github.com/laracmv">
+                    <img src="./assets/github.png" alt="">
+                    Github
+                </a>
             </div>
             
         </section>
-        <img src="lara.jpg" alt="Lara">
+        <img src="./assets/larac.png" alt="Lara">
     
     </main>
+    <footer class="rodape">
+        <p>Desenvolvido por Lara Vasconcelos</p>
+    </footer>
     
 </body>
 </html>
