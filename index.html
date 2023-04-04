@@ -5,14 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
     <header class="cabecalho">
         <nav class="cabecalho__menu">
-            <a class="cabecalho__menu__link">Home</a>
-            <a class="cabecalho__menu__link">Sobre Mim</a>
+            <a class="cabecalho__menu__link" href="index.html">Home</a>
+            <a class="cabecalho__menu__link" href="about.html">Sobre Mim</a>
+            <a class="cabecalho__menu__link" href="about.html">Curriculo</a>
         </nav>
+        <!-- nav: tag para "navegar" entre subpaginas -->
     </header>
     <main class="apresentacao">
         <section class="apresentacao__conteudo">
@@ -29,18 +31,18 @@
                 <h2 class="apresentacao__links__titulo">
                     Acesse minhas redes:
                 </h2>
-                <a class="apresentacao__links_link" href="https://instagram.com/lara_cmv"> 
-                    <img src="./assets/instagram.png" alt="Logo Instagram">
+                <a class="apresentacao__links__navegacao" href="https://instagram.com/lara_cmv"> 
+                    <img  src="./assets/instagram_logo.png" alt="Logo Instagram">
                     Instagram
                 </a>
-                <a class="apresentacao__links_link" href="https://github.com/laracmv">
-                    <img src="./assets/github.png" alt="">
+                <a class="apresentacao__links__navegacao" href="https://github.com/laracmv">
+                    <img  src="./assets/GITHUB-LOGO.png" alt="Logo Github">
                     Github
                 </a>
             </div>
             
         </section>
-        <img src="./assets/larac.png" alt="Lara">
+        <img class="apresentação__imagem" src="./assets/larac.png" alt="Lara">
     
     </main>
     <footer class="rodape">

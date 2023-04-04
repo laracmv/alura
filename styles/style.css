@@ -1,0 +1,168 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Oswald&display=swap');
+/* Serve para importar fontes do Google Sites. Par fazê-lo, pesquise a fonte nele, selecione-a, bote no (.) Import, copie o que tem lá(menos script) e cole aqui. Para adicionar a fonte, logo abaixo há o que deve ser copiado e colado.  */
+
+:root{
+    /* root: var usadas em todo o projeto; --: define variavel */
+    --cor-principal:#0000000;
+    --cor-secundaria:black;
+    --cor-terciaria: #ad5556;
+    --cor-hover: #ad5556; 
+
+    --fonte-principal: 'Oswald', sans-serif;
+    --fonte-secundaria:'Montserrat', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* height: 100vh; ele permanece que altura pegue  100% da tela(vh) */
+    box-sizing: border-box;
+    /* serve para manter o conteudo dentro da tela, não passando do elemente pai. vide:box sizing mozilla cascading style sheets. Obs: content-box funciona caso nao tenha bordas, se tiver o conteudo sairá da tela */
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria)
+}
+
+.cabecalho{
+    padding: 2% 0 0 15%;
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link{
+    font-family:var(--fonte-secundaria);
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+
+.apresentacao__conteudo__titulo{
+    font-size: 2.25rem;
+    font-family: var(--fonte-principal);
+}
+
+.apresentacao__conteudo__paragrafo{
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+}
+.destaque{
+    color: var(--cor-terciaria);
+}
+
+.link{
+    color: var(--cor-terciaria);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.destaque:hover{
+    text-decoration:underline
+}
+
+.apresentacao{
+    display: flex;
+    gap: 5rem;
+    /* por padrão fica em row(linha), caso queira mudar: flex diretion; vide: a complete guide to flexbox*/
+    align-items: center;
+    /* centraliza em relação a si mesmo */
+   justify-content: space-between;
+    /* deixa um item de um lado e o outro do lado oposto */
+   padding: 5% 15%;
+   /* 1 valor: superior e inferior, 2 valor: esquerdo e direito */
+}
+
+.apresentacao__conteudo{
+    width: 50%;
+   display: flex;
+   flex-direction: column;
+   /* visto que o fles vem em row  */
+   gap: 40px;
+   /* cria um espaçamento entre os elementos filho */
+}
+
+.apresentacao__links{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentacao__links__titulo{
+    font-family:var(--fonte-principal);
+    font-size: 1.5rem;
+
+}
+
+
+.apresentacao__links__navegacao{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    /* gap: espaço entre itens da flexbox */
+    border:2px solid var(--cor-terciaria);
+    /* border: espessura_borda tipo_de_borda cor; vide: w3schools css borders */
+    text-decoration: none;
+    /* text-decoration tira o _ de um arquivo com link */
+    width: 80%;
+    text-align: center;
+    border-radius: 8px;
+    /* border-radius arredonda as bordas do botão */
+    font-size: 1.5rem;
+    padding: 21.5px 0;
+    /* ao inserir 2 valores no padding, o 1 é o eixo vertical e o segundo do horizonal */
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+}
+
+.apresentacao__links__navegacao:hover{
+    /* hover: muda algo quando passa o o mouse por cima */
+    background-color: var(--cor-hover);
+}
+.apresentacao__conteudo__paragrafo_lista{
+    padding:3px;
+}
+
+.apresentação__imagem{
+    width: 35%;
+}
+
+.rodape{
+    padding: 24px;
+    color: var(--cor-principal);
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    font-family:var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media (max-width:1200px){
+/* isso acontecerá caso o width seja até o valor apresentado, se for maior que ele acontecerá as chaves a cima; isso se chama media queries, ver w3schools CSS @media Rule */
+    .cabecalho__menu{
+        justify-content: center;
+    }
+    .cabecalho{
+        padding: 10%;
+    }
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo{
+        width: auto;
+        /* não pode zera a width porque, ao fazê-lo é como se estivesse dizendo que não há conteudo.Pode-se tambem defini o width com 100%. o Auto manda preencher o espaço existente */
+    }
+
+    
+    
+}
