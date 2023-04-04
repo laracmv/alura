@@ -31,7 +31,7 @@ body{
 
 .cabecalho__menu{
     display: flex;
-    gap: 80px;
+    gap: 5rem;
 }
 
 .cabecalho__menu__link{
@@ -132,7 +132,7 @@ body{
 }
 
 .apresentação__imagem{
-    width: 35%;
+    width: 17rem;
 }
 
 .rodape{
@@ -163,6 +163,9 @@ body{
         /* não pode zera a width porque, ao fazê-lo é como se estivesse dizendo que não há conteudo.Pode-se tambem defini o width com 100%. o Auto manda preencher o espaço existente */
     }
 
+    .cabecalho__menu{
+        gap: 2.2rem;
+    }
     
-    
+
 }
